@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+  <meta name="theme-color" content="#f6f4ef" />
+  <meta name="description" content="Квадрат Декарта як техніка прийняття рішень: філософські засади, практичне застосування, переваги й обмеження." />
+  <title>Квадрат Декарта - мистецтво зваженого вибору</title>
+  <style>
+    :root{--paper:#f6f4ef;--ink:#202522;--muted:#70766f;--green:#315c4d;--lime:#d5e28b;--line:#deded5;--serif:Georgia,'Times New Roman',serif;--sans:'DM Sans',Arial,sans-serif;--display:'Manrope','DM Sans',sans-serif}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:78px}body{margin:0;color:var(--ink);font-family:var(--sans);font-size:clamp(1rem,.96rem + .18vw,1.125rem);line-height:1.65}a{color:inherit;text-decoration:none}button,input,textarea{font:inherit}section{scroll-margin-top:78px}.site-header{height:78px;padding:0 7.1%;display:flex;align-items:center;justify-content:center;background:rgba(246,244,239,.94);position:sticky;top:0;z-index:10;backdrop-filter:blur(12px)}.main-nav{display:flex;align-items:center;gap:34px}.main-nav a{font-size:12px;font-weight:600;color:#565d56}.main-nav a:hover{color:var(--green)}.menu-toggle{display:none}.hero{position:relative;min-height:660px;padding:95px 11.2% 74px;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;overflow:hidden}.hero-copy{max-width:590px;position:relative;z-index:1}.hero h1,.section-heading h2,.questions-intro h2,.how-heading h2,.example-heading h2,.interactive-top h2,.applications-heading h2,.limits-section>h2,.emotion-layout h2,.conclusion-layout h2,.sources-heading h2{font-family:var(--display);font-weight:500;letter-spacing:-.065em;line-height:1.12}.hero h1{font-size:clamp(48px,6vw,81px);margin:24px 0 20px}.hero h1 em,.section-heading h2 em,.questions-intro h2 em,.how-heading h2 em,.example-heading h2 em,.interactive-top h2 em,.applications-heading h2 em,.limits-section>h2 em,.emotion-layout h2 em,.conclusion-layout h2 em,.sources-heading h2 em{font-family:var(--serif);font-weight:400;letter-spacing:-.055em}.hero h1 em,.intro h2 em,.section-heading h2 em,.questions-intro h2 em,.example-heading h2 em,.interactive-top h2 em,.applications-heading h2 em,.limits-section>h2 em,.emotion-layout h2 em,.conclusion-layout h2 em,.sources-heading h2 em{color:var(--green)}.hero-lead{max-width:440px;color:#666d66;line-height:1.75}.hero-art{min-height:415px;display:grid;place-items:center;position:relative}.mini-grid{width:min(400px,100%);height:350px;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;position:relative;z-index:1;transform:rotate(-4deg);box-shadow:0 25px 55px #293c3019}.mini-grid>div{padding:22px;background:#f8f7f1;display:flex;flex-direction:column;justify-content:space-between}.mini-grid>div:first-child{background:var(--green);color:white}.mini-grid>div:last-child{background:#d9e4a7}.mini-grid span,.art-star{color:var(--green)}.mini-grid b{font-size:17px}.art-orbit{position:absolute;border:1px solid #a8ae9870;border-radius:50%;width:440px;height:440px}.orbit-two{width:510px;height:510px}.art-label{position:absolute;z-index:2;right:0;top:15%;background:var(--lime);border-radius:50%;width:91px;height:91px;display:grid;place-items:center;text-align:center}.section-wrap{max-width:1120px;margin:0 auto;padding-left:38px;padding-right:38px}.section-kicker{color:#777d73;font-size:9px;font-weight:700;letter-spacing:.16em;text-transform:uppercase}.intro,.questions-section,.limits-section,.conclusion-section{padding-top:100px;padding-bottom:100px}.intro-content,.conclusion-layout{display:grid;grid-template-columns:1fr .8fr;gap:70px;margin-top:28px}.intro h2,.conclusion-layout h2{font:500 clamp(34px,4vw,51px)/1.17 var(--display);letter-spacing:-.06em;margin:0}.intro h2 em{font-family:var(--serif);font-weight:400}.intro-text p,.conclusion-layout p,.emotion-layout p{color:#656b65;line-height:1.85}.method-section,.interactive-section,.applications-section,.emotion-section,.sources-section{padding:85px 0;background-color:rgba(233,232,223,.68)}.section-heading{display:grid;grid-template-columns:1fr 1fr;gap:25px 60px;align-items:end}.section-heading .section-kicker{grid-column:1/-1}.section-heading h2,.how-heading h2{font-size:clamp(39px,5vw,61px);margin:0}.section-heading>p{color:#6c726b;line-height:1.8}.rules-grid,.example-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:35px}.rule-card,.example-cell{padding:24px;background:#f5f4ee}.rule-card{display:grid;grid-template-columns:35px 1fr 25px;gap:12px}.rule-card h3,.example-cell h3,.steps-list h3{margin:0 0 8px}.rule-card p,.example-cell p,.steps-list p,.applications-grid p{color:#70766f;font-size:12px;line-height:1.75}.method-caption{color:#687063;font-family:var(--serif);font-style:italic}.questions-intro{display:grid;grid-template-columns:1fr 1.1fr .8fr;gap:25px;align-items:end;margin-bottom:35px}.questions-intro h2,.applications-heading h2,.limits-section>h2,.emotion-layout h2,.conclusion-layout h2,.sources-heading h2{font-size:clamp(36px,4.5vw,56px);margin:0}.questions-intro p,.applications-heading p{color:#737970;font-size:12px}.question-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.question-card{min-height:240px;padding:22px;display:flex;flex-direction:column}.q-one{background:var(--green);color:white}.q-two{background:#e8e6dc}.q-three{background:#dedfcf}.q-four{background:#d9e4a7}.question-card h3{font-size:20px;line-height:1.25;margin:auto 0 10px}.question-card p{font-size:11px}.how-section{padding:90px 0;background:linear-gradient(135deg,#315c4d,#23483a);color:#f8f7f1}.how-layout{display:grid;grid-template-columns:.8fr 1.1fr;gap:90px}.how-section .section-kicker,.how-heading>p,.steps-list p{color:#d0d8ce}.how-heading h2 em{color:var(--lime)}.steps-list{list-style:none;padding:0;margin:0}.steps-list li{display:grid;grid-template-columns:40px 1fr;gap:15px;padding:18px 0;border-bottom:1px solid #ffffff30}.example-section{padding-top:100px;padding-bottom:100px;display:grid;grid-template-columns:.75fr 1.25fr;gap:50px;align-items:center}.example-heading h2{font-size:clamp(38px,4.5vw,56px)}.example-grid{margin:0}.interactive-top,.applications-heading{display:flex;justify-content:space-between;align-items:end;gap:30px;margin:25px 0 35px}.interactive-top h2{font-size:clamp(37px,4.5vw,56px)}.interactive-top>p{max-width:300px;color:#71776f}.decision-label{display:block;margin-bottom:8px;font-size:11px;font-weight:700}.decision-input,textarea{width:100%;padding:12px;border:1px solid #cdd1c3;background:#f6f5ef}.worksheet-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}.worksheet-card{display:block;padding:20px;background:#f6f5ef}.worksheet-card span{display:flex;justify-content:space-between;font-size:9px;color:#63715a}.worksheet-card strong{display:block;margin:14px 0 10px}.worksheet-card textarea{min-height:70px;font-size:12px}.applications-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:25px;margin-top:30px}.applications-grid article{padding-top:20px;border-top:1px solid #d4d6cb}.applications-grid h3{font-size:20px}.pros-cons{display:grid;grid-template-columns:1fr 1fr;gap:50px;margin-top:35px}.pros-cons li{padding:7px 0;color:#6f756d;font-size:12px}.emotion-layout{display:grid;grid-template-columns:120px 1fr;gap:25px}.emotion-mark{font:150px/.8 var(--serif);color:#9ba77d}.quote-credit{font-size:9px;letter-spacing:.12em}.source-list{list-style:none;padding:0}.source-list li{display:grid;grid-template-columns:40px 1fr;gap:12px;padding:14px 0;border-top:1px solid #d5d6cd}.source-list li>span{color:#8c957b}.source-list p{font-size:11px;color:#777d73}.source-list a,.text-link{color:var(--green);font-size:11px;font-weight:700}.skip-link{position:fixed;top:8px;left:8px;z-index:30;padding:10px;background:var(--green);color:white;transform:translateY(-160%)}.skip-link:focus{transform:translateY(0)}:focus-visible{outline:3px solid #587b4c;outline-offset:4px}.reading-progress{position:fixed;top:0;left:0;z-index:20;width:100%;height:3px}.reading-progress span{display:block;width:0;height:100%;background:var(--green)}.back-to-top{position:fixed;right:24px;bottom:24px;z-index:15;width:50px;height:50px;display:grid;place-items:center;border-radius:50%;background:var(--green);color:#fff;font-size:25px;opacity:0;visibility:hidden;transition:.25s}.back-to-top.is-visible{opacity:1;visibility:visible}.has-scroll-reveal .reveal-on-scroll{opacity:0;transform:translateY(20px);transition:.6s}.has-scroll-reveal .reveal-on-scroll.is-revealed{opacity:1;transform:none}
+    @media(max-width:800px){.hero{padding:70px 7%;min-height:560px}.section-wrap{padding-inline:7%}.question-grid{grid-template-columns:1fr 1fr}.questions-intro{grid-template-columns:1fr 1.3fr}.questions-intro p{grid-column:2}.how-layout{gap:45px}.intro-content,.conclusion-layout{gap:35px}}
+    @media(max-width:600px){section{scroll-margin-top:64px}.site-header{height:64px;padding:0 20px;justify-content:flex-end}.menu-toggle{display:flex;flex-direction:column;gap:5px;border:0;background:none;padding:12px;z-index:12}.menu-toggle span{width:22px;height:1px;background:var(--ink)}.main-nav{display:none;position:absolute;top:63px;left:0;right:0;padding:20px;background:var(--paper);flex-direction:column;align-items:flex-start;gap:14px}.main-nav.open{display:flex}.main-nav a{font-size:14px}.hero{display:block;padding:60px 24px 45px;min-height:0}.hero h1{font-size:48px}.hero-art{min-height:310px;margin-top:20px}.mini-grid{width:290px;height:270px}.art-orbit{width:300px;height:300px}.orbit-two{width:340px;height:340px}.art-label{width:74px;height:74px;font-size:12px}.section-wrap{padding-inline:24px}.intro,.questions-section,.limits-section,.conclusion-section{padding-block:70px}.intro-content,.conclusion-layout,.how-layout,.example-section{display:block}.intro-content>*,.conclusion-layout>div{margin-top:22px}.section-heading{display:block}.section-heading h2,.how-heading h2{margin-top:20px;font-size:43px}.rules-grid,.example-grid,.worksheet-grid,.pros-cons{grid-template-columns:1fr}.questions-intro{display:block}.questions-intro h2{margin:17px 0}.question-grid{grid-template-columns:1fr 1fr}.question-card{min-height:195px;padding:15px}.question-card h3{font-size:17px}.how-section,.method-section,.interactive-section,.applications-section,.emotion-section,.sources-section{padding-block:65px}.steps-list{margin-top:25px}.example-section{padding-block:70px}.example-grid{margin-top:25px}.interactive-top,.applications-heading{display:block}.interactive-top h2{font-size:42px}.interactive-top>p{margin-top:15px}.applications-heading h2{font-size:42px}.applications-grid{grid-template-columns:1fr;gap:15px}.emotion-layout{display:block}.emotion-mark{font-size:85px;height:55px}.emotion-layout h2{font-size:40px}.conclusion-layout h2{font-size:42px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.has-scroll-reveal .reveal-on-scroll{opacity:1;transform:none}}
+    @media print{.site-header,.menu-toggle,.reading-progress,.skip-link,.interactive-section,.back-to-top{display:none!important}body{background:white;color:black}section{break-inside:avoid}.how-section{background:white;color:black}}
+    body {
+      background-color: #f4f3ec;
+      background-image:
+        radial-gradient(ellipse at 8% 12%, rgba(213, 226, 139, .42), transparent 28%),
+        radial-gradient(ellipse at 90% 20%, rgba(49, 92, 77, .18), transparent 30%),
+        radial-gradient(ellipse at 18% 48%, rgba(202, 216, 169, .27), transparent 32%),
+        radial-gradient(ellipse at 84% 73%, rgba(213, 226, 139, .3), transparent 28%),
+        radial-gradient(ellipse at 45% 96%, rgba(49, 92, 77, .12), transparent 34%),
+        repeating-linear-gradient(135deg, rgba(49, 92, 77, .025) 0 1px, transparent 1px 11px);
+      background-attachment: fixed;
+    }
+    .hero {
+      background: radial-gradient(ellipse at 78% 43%, rgba(213, 226, 139, .34), transparent 38%),
+        linear-gradient(128deg, rgba(238, 237, 229, .8), rgba(232, 236, 226, .76));
+    }
+    .method-section, .interactive-section, .applications-section,
+    .emotion-section, .sources-section {
+      background-color: rgba(233, 232, 223, .68);
+    }
+    .how-section {
+      background: linear-gradient(135deg, rgba(49, 92, 77, .96), rgba(35, 72, 58, .96));
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#top">Перейти до основного вмісту</a>
+  <div class="reading-progress" aria-hidden="true"><span></span></div>
+  <header class="site-header">
+    <button class="menu-toggle" aria-label="Відкрити меню" aria-expanded="false"><span></span><span></span></button>
+    <nav class="main-nav" aria-label="Основна навігація">
+      <a href="#about">Про метод</a>
+      <a href="#how-to">Як працює</a>
+      <a href="#practice">Спробувати</a>
+      <a href="#sources">Джерела</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <h1>Квадрат Декарта:<br /><em>мистецтво</em> зваженого вибору</h1>
+        <p class="hero-lead">Чотири запитання, що допомагають подивитися на рішення з усіх боків - і почути не лише розум, а й себе.</p>
+      </div>
+      <div class="hero-art" aria-label="Схематичне зображення квадрата з чотирма запитаннями">
+        <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+        <div class="art-label">Побачити<br />цілісно</div>
+        <div class="mini-grid">
+          <div><span>01</span><b>Що буде?</b></div><div><span>02</span><b>Чого не буде?</b></div>
+          <div><span>03</span><b>Що буде, якщо ні?</b></div><div><span>04</span><b>Чого не буде, якщо ні?</b></div>
+        </div>
+        <span class="art-star star-one">✳</span><span class="art-star star-two">✳</span>
+      </div>
+    </section>
+
+    <section class="intro section-wrap" id="about">
+      <div class="section-kicker">01 <span>-</span> Контекст</div>
+      <div class="intro-content">
+        <h2>Складний вибір стає яснішим, коли його <em>розкласти на частини.</em></h2>
+        <div class="intro-text">
+          <p>Рене Декарт (1596-1650) - філософ, математик і природознавець, який поставив раціональний метод в основу пізнання. Техніка, відома як «квадрат Декарта», пропонує структурувати рішення за допомогою чотирьох запитань.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="method-section" id="method">
+      <div class="section-wrap">
+        <div class="section-heading">
+          <div class="section-kicker">02 <span>-</span> Філософські засади</div>
+          <h2>Мислити ясно.<br /><em>Розглядати повно.</em></h2>
+          <p>У «Міркуванні про метод» (1637) Декарт сформулював чотири правила пошуку істини. Два з них особливо виразно перегукуються з квадратом.</p>
+        </div>
+        <div class="rules-grid">
+          <article class="rule-card"><span class="rule-number">01</span><div><h3>Очевидність</h3><p>Приймати за істинне лише те, що мислиться ясно й виразно; уникати поспішних суджень.</p></div><span class="rule-symbol">◉</span></article>
+          <article class="rule-card"><span class="rule-number">02</span><div><h3>Аналіз</h3><p>Ділити складну проблему на стільки простих частин, скільки потрібно для її розв’язання.</p></div><span class="rule-symbol">⊞</span></article>
+          <article class="rule-card"><span class="rule-number">03</span><div><h3>Порядок</h3><p>Рухатися від найпростішого й найпізнанішого до складнішого.</p></div><span class="rule-symbol">↗</span></article>
+          <article class="rule-card"><span class="rule-number">04</span><div><h3>Повнота</h3><p>Складати повні переліки, щоб нічого важливого не було пропущено.</p></div><span class="rule-symbol">☷</span></article>
+        </div>
+        <p class="method-caption">Квадрат перетворює складне рішення на чотири запитання: це практичне втілення аналізу й прагнення до повноти.</p>
+      </div>
+    </section>
+
+    <section class="questions-section section-wrap">
+      <div class="questions-intro">
+        <div class="section-kicker">03 <span>-</span> Чотири ракурси</div>
+        <h2>Що саме запитує <em>квадрат?</em></h2>
+        <p>Дві перспективи - рішення та відмова від нього. У кожній є і здобутки, і те, чим доведеться поступитися.</p>
+      </div>
+      <div class="question-grid">
+        <article class="question-card q-one"><span class="q-index">01 / ЯКЩО ТАК</span><span class="q-icon">↗</span><h3>Що буде,<br />якщо це станеться?</h3><p>Які нові можливості й наслідки принесе цей вибір?</p></article>
+        <article class="question-card q-two"><span class="q-index">02 / ЯКЩО ТАК</span><span class="q-icon">−</span><h3>Чого не буде,<br />якщо це станеться?</h3><p>Від чого доведеться відмовитися, зробивши цей крок?</p></article>
+        <article class="question-card q-three"><span class="q-index">03 / ЯКЩО НІ</span><span class="q-icon">↘</span><h3>Що буде,<br />якщо цього не станеться?</h3><p>Що збережеться або з’явиться, якщо залишити все як є?</p></article>
+        <article class="question-card q-four"><span class="q-index">04 / ЯКЩО НІ</span><span class="q-icon">＋</span><h3>Чого не буде,<br />якщо цього не станеться?</h3><p>Яких можливостей чи здобутків можна не отримати?</p></article>
+      </div>
+    </section>
+
+    <section class="how-section" id="how-to">
+      <div class="section-wrap how-layout">
+        <div class="how-heading"><div class="section-kicker">04 <span>-</span> Послідовність</div><h2>Як застосувати<br /><em>на практиці</em></h2><p>Для початку потрібні лише конкретне запитання й трохи часу на чесні відповіді.</p></div>
+        <ol class="steps-list">
+          <li><span>01</span><div><h3>Сформулюйте вибір</h3><p>Запишіть рішення як бінарне запитання: «робити чи ні?», «так чи ні?».</p></div></li>
+          <li><span>02</span><div><h3>Заповніть усі чотири поля</h3><p>Не пропускайте запитань і поки що не намагайтеся виправдовувати свої відповіді.</p></div></li>
+          <li><span>03</span><div><h3>Знайдіть головне</h3><p>Перечитайте записи й позначте наслідки, які для вас найважливіші.</p></div></li>
+          <li><span>04</span><div><h3>Поверніться до рішення</h3><p>За потреби перегляньте таблицю пізніше: обставини й пріоритети можуть змінитися.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="example-section section-wrap">
+      <div class="example-heading"><div class="section-kicker">05 <span>-</span> Приклад</div><h2>Друга освіта:<br /><em>так чи ні?</em></h2><p>Уявімо, що людина розмірковує, чи вступати на другу освіту.</p></div>
+      <div class="example-grid">
+        <article class="example-cell"><span>ЯКЩО ТАК <b>01</b></span><h3>Що буде?</h3><p>Отримаю другу кваліфікацію та нові можливості для кар’єри.</p></article>
+        <article class="example-cell"><span>ЯКЩО ТАК <b>02</b></span><h3>Чого не буде?</h3><p>Не матиму вільних вечорів і витрачу частину заощаджень.</p></article>
+        <article class="example-cell"><span>ЯКЩО НІ <b>03</b></span><h3>Що буде?</h3><p>Збережу час і гроші та матиму більше відпочинку.</p></article>
+        <article class="example-cell"><span>ЯКЩО НІ <b>04</b></span><h3>Чого не буде?</h3><p>Не матиму додаткового диплома та нових знайомств.</p></article>
+      </div>
+    </section>
+
+    <section class="interactive-section" id="practice">
+      <div class="section-wrap">
+        <div class="interactive-top"><div><div class="section-kicker">06 <span>-</span> Ваша черга</div><h2>Застосуйте квадрат<br /><em>до свого рішення.</em></h2></div><p>Запишіть запитання й коротко занотуйте перші думки. Усе введене залишається у вашому браузері.</p></div>
+        <label class="decision-label" for="decision">Моє рішення</label>
+        <input id="decision" class="decision-input" type="text" placeholder="Наприклад: чи змінювати роботу?" />
+        <div class="worksheet-grid">
+          <label class="worksheet-card"><span>01 <b>ЯКЩО ТАК</b></span><strong>Що буде, якщо це станеться?</strong><textarea placeholder="Можливі здобутки та наслідки…"></textarea></label>
+          <label class="worksheet-card"><span>02 <b>ЯКЩО ТАК</b></span><strong>Чого не буде, якщо це станеться?</strong><textarea placeholder="Чим доведеться поступитися…"></textarea></label>
+          <label class="worksheet-card"><span>03 <b>ЯКЩО НІ</b></span><strong>Що буде, якщо цього не станеться?</strong><textarea placeholder="Що збережеться або зміниться…"></textarea></label>
+          <label class="worksheet-card"><span>04 <b>ЯКЩО НІ</b></span><strong>Чого не буде, якщо цього не станеться?</strong><textarea placeholder="Яких можливостей не отримаю…"></textarea></label>
+        </div>
+      </div>
+    </section>
+
+    <section class="applications-section">
+      <div class="section-wrap"><div class="section-kicker">08 <span>-</span> Де використовують</div><div class="applications-heading"><h2>Один інструмент -<br /><em>різні контексти.</em></h2><p>Квадрат допомагає зменшити невизначеність, але не ухвалює рішення замість людини.</p></div>
+        <div class="applications-grid"><article><span>01</span><h3>Психологія<br />та коучинг</h3><p>Допомагає структурувати переживання й зменшити тривогу перед складним вибором.</p></article><article><span>02</span><h3>Освіта</h3><p>Може бути прийомом для проєктування навчального процесу та вибору педагогічних рішень.</p></article><article><span>03</span><h3>Бізнес</h3><p>Дає змогу швидко окреслити можливі наслідки управлінського рішення.</p></article></div>
+      </div>
+    </section>
+
+    <section class="limits-section section-wrap">
+      <div class="section-kicker">09 <span>-</span> Зважений погляд</div><h2>У кожного методу є <em>межі.</em></h2>
+      <div class="pros-cons"><div class="pros"><h3><span>＋</span> Сильні сторони</h3><ul><li>Простота й доступність - не потрібні спеціальні знання чи інструменти.</li><li>Наочність - наслідки зібрані в одному місці.</li><li>Увага до втрат - метод нагадує про ціну кожного вибору.</li><li>Запис думок допомагає впорядкувати внутрішній хаос.</li></ul></div><div class="cons"><h3><span>−</span> Обмеження</h3><ul><li>Найкраще працює для бінарного вибору, а не для багатьох альтернатив.</li><li>Не оцінює ймовірність наслідків і не визначає їхню вагу.</li><li>Якість результату залежить від чесності та повноти відповідей.</li><li>Не замінює особистої відповідальності за остаточне рішення.</li></ul></div></div>
+    </section>
+
+    <section class="emotion-section">
+      <div class="section-wrap emotion-layout"><div class="emotion-mark">“</div><div><div class="section-kicker">10 <span>-</span> Критичний погляд</div><h2>Чи достатньо <em>самого розуму?</em></h2><p>Невролог Антоніо Дамасіо у книжці «Помилка Декарта» описав пацієнта, який після операції на мозку мав збережений інтелект, але через порушення, пов’язані з емоціями, не міг ухвалювати навіть прості рішення. Цей приклад підказує: емоції - не перешкода раціональності, а важлива її складова.</p><p>Тож квадрат варто сприймати не як «холодний» розрахунок, а як спосіб почути власні почуття й пріоритети та усвідомити їх - не підміняючи ними аналіз.</p><span class="quote-credit">АНТОНІО ДАМАСІО · «ПОМИЛКА ДЕКАРТА»</span></div></div>
+    </section>
+
+    <section class="conclusion-section section-wrap"><div class="section-kicker">Підсумок</div><div class="conclusion-layout"><h2>Ясність починається<br />з <em>правильних запитань.</em></h2><div><p>Квадрат Декарта - проста й корисна техніка, що втілює ідеал ясності, послідовності й повноти. Хоча авторство Декарта не підтверджене першоджерелами, метод перегукується з його підходом: складне розкладається на зрозумілі частини.</p><p>Водночас він не враховує ймовірності та ваги наслідків і не знімає відповідальності за вибір. Розум працює найкраще у поєднанні з усвідомленням власних почуттів.</p><a href="#practice" class="text-link">Спробувати квадрат <span>↗</span></a></div></div></section>
+
+    <section class="sources-section" id="sources"><div class="section-wrap"><div class="sources-heading"><h2>Список <em>джерел</em></h2></div><ol class="source-list">
+      <li><span>01</span><div><strong>Декарт Р. «Міркування про метод».</strong><p>Розділ II містить чотири правила методу.</p></div></li>
+      <li><span>02</span><div><strong>Зімовін О. «Прийняти непросте рішення».</strong><p>Журнал «Національна бібліотека України», 2019, № 11.</p><a href="https://i.factor.ua/ukr/journals/nibu/2019/november/issue-90/article-105307.html" target="_blank" rel="noopener noreferrer">Переглянути матеріал ↗</a></div></li>
+      <li><span>03</span><div><strong>Ковбаса Ю. М. «Математичні ігри як інноваційний прийом у проєктуванні навчального процесу».</strong><p>Чернігівський національний педагогічний університет імені Т. Г. Шевченка.</p><a href="https://epub.chnpu.edu.ua/jspui/" target="_blank" rel="noopener noreferrer">Переглянути репозитарій ↗</a></div></li>
+      <li><span>04</span><div><strong>Анотація дисципліни «Особистісний та кар’єрний коучинг».</strong><p>Коуч-технологія прийняття рішень: квадрат Декарта та матриця Ейзенхауера.</p><a href="https://okop.navs.edu.ua/assets/files/akr_mag_pd/2025/vk10_2025_a.pdf" target="_blank" rel="noopener noreferrer">Відкрити PDF ↗</a></div></li>
+      <li><span>05</span><div><strong>«Квадрат Декарта: що це, переваги й недоліки методу».</strong><a href="https://kokoc.com/blog/kvadrat-dekarta/" target="_blank" rel="noopener noreferrer">Переглянути матеріал ↗</a></div></li>
+      <li><span>06</span><div><strong>Хайду Н. «Как принять решение с помощью квадрата Декарта».</strong><a href="https://www.bitrix24.ru/journal/kvadrat-dekarta/" target="_blank" rel="noopener noreferrer">Переглянути матеріал ↗</a></div></li>
+      <li><span>07</span><div><strong>«Квадрат Декарта: техника принятия решений и примеры».</strong><a href="https://journal.sovcombank.ru/zhizn/kvadrat-dekarta-chto-eto-takoe-tehnika-prinyatiya-reshenii-i-primeri-iz-zhizni" target="_blank" rel="noopener noreferrer">Переглянути матеріал ↗</a></div></li>
+      <li><span>08</span><div><strong>Дамасіо А. «Помилка Декарта: емоції, розум і людський мозок».</strong><p>Також: огляд про прийняття рішень.</p><a href="https://skillbox.ru/media/growth/kak-prinyat-reshenie-v-zhizni/" target="_blank" rel="noopener noreferrer">Переглянути огляд ↗</a></div></li>
+    </ol></div></section>
+  </main>
+
+  <a class="back-to-top" href="#top" aria-label="Повернутися на початок сторінки" title="На початок">↑</a>
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const mainNav = document.querySelector('.main-nav');
+    const decisionField = document.getElementById('decision');
+    const worksheetFields = [decisionField, ...document.querySelectorAll('.worksheet-card textarea')];
+    const progressBar = document.querySelector('.reading-progress span');
+    const backToTop = document.querySelector('.back-to-top');
+    const storageKey = 'cartesian-square-worksheet';
+
+    menuToggle.addEventListener('click', () => {
+      const isOpen = menuToggle.getAttribute('aria-expanded') === 'true';
+      menuToggle.setAttribute('aria-expanded', String(!isOpen));
+      mainNav.classList.toggle('open', !isOpen);
+    });
+
+    mainNav.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => {
+        menuToggle.setAttribute('aria-expanded', 'false');
+        mainNav.classList.remove('open');
+      });
+    });
+
+    try {
+      const savedValues = JSON.parse(localStorage.getItem(storageKey) || '[]');
+      worksheetFields.forEach((field, index) => {
+        if (typeof savedValues[index] === 'string') field.value = savedValues[index];
+      });
+    } catch {
+      // Keep the worksheet usable if browser storage is unavailable.
+    }
+
+    worksheetFields.forEach((field) => {
+      field.addEventListener('input', () => {
+        try {
+          localStorage.setItem(storageKey, JSON.stringify(worksheetFields.map((item) => item.value)));
+        } catch {
+          // Keep the worksheet usable if browser storage is unavailable.
+        }
+      });
+    });
+
+    const updateReadingProgress = () => {
+      const scrollableHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = scrollableHeight > 0 ? (window.scrollY / scrollableHeight) * 100 : 0;
+      progressBar.style.width = `${Math.min(progress, 100)}%`;
+      backToTop.classList.toggle('is-visible', window.scrollY > 500);
+    };
+
+    window.addEventListener('scroll', updateReadingProgress, { passive: true });
+    window.addEventListener('resize', updateReadingProgress);
+    updateReadingProgress();
+
+    const revealSelectors = [
+      '.intro-content', '.section-heading > *', '.rule-card', '.questions-intro > *',
+      '.question-card', '.questions-footnote', '.how-heading', '.steps-list li',
+      '.example-heading', '.example-cell', '.interactive-top', '.worksheet-card',
+      '.origin-content', '.applications-heading', '.applications-grid article',
+      '.limits-section > *', '.emotion-layout > *', '.conclusion-layout > *',
+      '.sources-heading', '.source-list li'
+    ].join(', ');
+
+    if ('IntersectionObserver' in window) {
+      const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-revealed');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -35px 0px' });
+
+      document.querySelectorAll(revealSelectors).forEach((element) => {
+        element.classList.add('reveal-on-scroll');
+        revealObserver.observe(element);
+      });
+      document.body.classList.add('has-scroll-reveal');
+    }
+  </script>
+</body>
+</html>
